@@ -7,8 +7,8 @@ const Logo: Icon = ({ fill = "white" }) => {
   return (
     <LogoContainer>
       <svg width="154" height="32" viewBox="0 0 154 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="Logo__Desktop">
-        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <g id="Desktop-HD-Copy-12" transform="translate(-136.000000, -24.000000)" fill={fill} fill-rule="nonzero">
+        <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+          <g id="Desktop-HD-Copy-12" transform="translate(-136.000000, -24.000000)" fill={fill} fillRule="nonzero">
             <g id="lunadio-04" transform="translate(136.000000, 24.000000)">
               <polygon id="Shape" points="5.05641694 26.25 14.4820195 26.25 14.4820195 31.25 0 31.25 0 6.05 5.05641694 6.05"></polygon>
               <path
@@ -41,8 +41,8 @@ const Logo: Icon = ({ fill = "white" }) => {
       </svg>
 
       <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="Logo__Mobile">
-        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <g id="Desktop-HD-Copy-12" transform="translate(-257.000000, -24.000000)" fill={fill} fill-rule="nonzero">
+        <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+          <g id="Desktop-HD-Copy-12" transform="translate(-257.000000, -24.000000)" fill={fill} fillRule="nonzero">
             <g id="lunadio-04" transform="translate(136.000000, 24.000000)">
               <g id="lunadio_small" transform="translate(121.000000, 0.000000)">
                 <ellipse id="Oval" cx="29.1575244" cy="3.585" rx="3.59667752" ry="3.585"></ellipse>
