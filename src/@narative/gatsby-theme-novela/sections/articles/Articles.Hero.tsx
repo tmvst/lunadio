@@ -24,7 +24,9 @@ const authorQuery = graphql`
 `;
 
 const ArticlesHero: React.FC<IAuthor> = ({ authors }) => {
-  const { gridLayout = "tiles", hasSetGridLayout, setGridLayout } = useContext(GridLayoutContext);
+  const { gridLayout = "tiles", hasSetGridLayout, setGridLayout } = useContext(
+    GridLayoutContext
+  );
 
   const results = useStaticQuery(authorQuery);
   const hero = results.site.edges[0].node.siteMetadata.hero;

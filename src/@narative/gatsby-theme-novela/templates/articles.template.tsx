@@ -7,6 +7,7 @@ import { Template } from "@types";
 import React from "react";
 import ArticlesHero from "../sections/articles/Articles.Hero";
 import ArticlesList from "../sections/articles/Articles.List";
+import ProjectsList from "../sections/projects/Projects.List";
 
 const ArticlesPage: Template = ({ location, pageContext }) => {
   const articles = pageContext.group;
@@ -16,6 +17,7 @@ const ArticlesPage: Template = ({ location, pageContext }) => {
     <Layout>
       <SEO pathname={location.pathname} />
       <ArticlesHero authors={authors} />
+      <ProjectsList></ProjectsList>
       <Section narrow>
         <ArticlesList articles={articles} />
         <ArticlesPaginator show={pageContext.pageCount > 1}>

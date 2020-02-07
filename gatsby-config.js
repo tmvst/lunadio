@@ -5,9 +5,9 @@ module.exports = {
     title: `Lunadio`,
     name: `Lunadio`,
     siteUrl: `https://lunadio.com`,
-    description: `This is my description that will be used in the meta tags and important for search results`,
+    description: `A community of indie hackers documenting our journey`,
     hero: {
-      heading: `Welcome to Novela, the simplest way to start publishing with Gatsby.`,
+      heading: `A community of indie hackers documenting our&nbsp;journey`,
       maxWidth: 652
     },
     social: [
