@@ -1,9 +1,8 @@
-import React, { useState } from "react";
 import styled from "@emotion/styled";
-import { useColorMode } from "theme-ui";
-
 import mediaqueries from "@styles/media";
 import { copyToClipboard } from "@utils";
+import React, { useState } from "react";
+import { useColorMode } from "theme-ui";
 
 const ShareDarkModeOffIcon: React.FC<{}> = () => (
   <svg
@@ -95,7 +94,7 @@ const ArticleControls: React.FC<{}> = () => {
   return (
     <NavControls>
       <SharePageButton />
-      <DarkModeToggle />
+      {/* <DarkModeToggle /> */}
     </NavControls>
   );
 };

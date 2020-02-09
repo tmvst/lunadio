@@ -1,25 +1,21 @@
-import React, { useRef, useState, useEffect } from "react";
-import styled from "@emotion/styled";
-import throttle from "lodash/throttle";
-import { graphql, useStaticQuery } from "gatsby";
-
 import Layout from "@components/Layout";
 import MDXRenderer from "@components/MDX";
 import Progress from "@components/Progress";
 import Section from "@components/Section";
 import Subscription from "@components/Subscription";
-
+import styled from "@emotion/styled";
 import mediaqueries from "@styles/media";
+import { Template } from "@types";
 import { debounce } from "@utils";
-
+import { graphql, useStaticQuery } from "gatsby";
+import throttle from "lodash/throttle";
+import React, { useEffect, useRef, useState } from "react";
 import ArticleAside from "../sections/article/Article.Aside";
-import ArticleHero from "../sections/article/Article.Hero";
 import ArticleControls from "../sections/article/Article.Controls";
+import ArticleHero from "../sections/article/Article.Hero";
 import ArticlesNext from "../sections/article/Article.Next";
 import ArticleSEO from "../sections/article/Article.SEO";
 import ArticleShare from "../sections/article/Article.Share";
-
-import { Template } from "@types";
 
 const siteQuery = graphql`
   {
@@ -87,14 +83,14 @@ const Article: Template = ({ pageContext, location }) => {
       <ArticleAside contentHeight={contentHeight}>
         <Progress contentHeight={contentHeight} />
       </ArticleAside>
-      <MobileControls>
-        <ArticleControls />
-      </MobileControls>
       <ArticleBody ref={contentSectionRef}>
         <MDXRenderer content={article.body}>
           <ArticleShare />
         </MDXRenderer>
       </ArticleBody>
+      <MobileControls>
+        <ArticleControls />
+      </MobileControls>
       {mailchimp && article.subscription && <Subscription />}
       {next.length > 0 && (
         <NextArticle narrow>
@@ -111,7 +107,7 @@ export default Article;
 
 const MobileControls = styled.div`
   position: relative;
-  padding-top: 60px;
+  padding-bottom: 60px;
   transition: background 0.2s linear;
   text-align: center;
 
@@ -129,7 +125,7 @@ const ArticleBody = styled.article`
   ${mediaqueries.desktop`
     padding-left: 53px;
   `}
-  
+
   ${mediaqueries.tablet`
     padding: 70px 0 80px;
   `}
