@@ -76,17 +76,8 @@ const limitToTwoLines = css`
   `}
 `;
 
-const ProjectItemWrapper = styled.div`
-  flex-basis: 33%;
-  padding-right: 1rem;
-
-  &:last-child {
-    padding-right: 0;
-  }
-`;
-
 const HeadingContainer = styled.div`
-  margin: 100px 0;
+  margin-top: 100px;
   margin-bottom: 40px;
 
   ${mediaqueries.desktop`
@@ -95,6 +86,7 @@ const HeadingContainer = styled.div`
 
   ${mediaqueries.tablet`
     width: 100%;
+    margin-top: 80px;
   `}
 `;
 
@@ -110,8 +102,13 @@ const Title = styled(Headings.h2)`
     font-size: 38px
   `}
 
+  ${mediaqueries.tablet`
+    line-height: 1.15;
+  `}
+
   ${mediaqueries.phablet`
     font-size: 32px;
+    line-height: 1.15;
   `}
 `;
 
@@ -142,8 +139,25 @@ const ProjectTitle = styled(Headings.h2)`
 `;
 
 const ProjectsWrapper = styled.div`
-  margin-bottom: 10rem;
   display: flex;
+
+  ${mediaqueries.tablet`
+    flex-wrap: wrap;
+  `}
+`;
+
+const ProjectItemWrapper = styled.div`
+  flex-basis: 33%;
+  padding-right: 1rem;
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  ${mediaqueries.tablet`
+    flex-basis: 100%;
+    margin-bottom: 4rem;
+  `}
 `;
 
 const ProjectExcerpt = styled.p`
