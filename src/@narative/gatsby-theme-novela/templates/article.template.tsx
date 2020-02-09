@@ -91,7 +91,8 @@ const Article: Template = ({ pageContext, location }) => {
       <MobileControls>
         <ArticleControls />
       </MobileControls>
-      {mailchimp && article.subscription && <Subscription />}
+      <Subscription />
+      {/* {mailchimp && article.subscription && <Subscription />} */}
       {next.length > 0 && (
         <NextArticle narrow>
           <FooterNext>More articles from {name}</FooterNext>
