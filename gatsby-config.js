@@ -36,11 +36,19 @@ module.exports = {
         contentAuthors: "content/authors",
         rootPath: "/",
         basePath: "/",
+        mailchimp: true,
         authorsPage: false,
         sources: {
           local: false,
           contentful: true
         }
+      }
+    },
+    {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint:
+          "https://lunadio.us4.list-manage.com/subscribe/post?u=154d76983d1e4b50ed11f4385&amp;id=6c0ec8d525"
       }
     },
     {
