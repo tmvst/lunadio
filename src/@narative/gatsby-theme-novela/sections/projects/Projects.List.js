@@ -5,6 +5,7 @@ import styled from "@emotion/styled";
 import mediaqueries from "@styles/media";
 import React from "react";
 import { useColorMode } from "theme-ui";
+import banneriumLogo from "../../../../assets/images/bannerium.svg";
 import feedbearLogo from "../../../../assets/images/feedbear.png";
 import prezeLogoWhite from "../../../../assets/images/preze-white.png";
 import prezeLogo from "../../../../assets/images/preze.png";
@@ -29,7 +30,7 @@ const ProjectsList = () => {
           name="Bannerium"
           excerpt="Stop wasting time when creating ad&nbsp;campaigns in&nbsp;Photoshop"
           link="https://bannerium.com/"
-          logoUrl={feedbearLogo}
+          logoUrl={banneriumLogo}
         ></ProjectItem>
         <ProjectItem
           name="Preze"
