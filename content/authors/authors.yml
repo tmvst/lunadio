@@ -1,17 +1,17 @@
-- name: Dennis Brotzky
+- name: Ivan Homola
   bio: |
-    Written by You. This is where your author bio lives. Share your work, your
-    joys and of course, your Twitter handle.
-  avatar: ./avatars/dennis-brotzky.jpg
+    Young entrepreneur focusing on mobile and web technologies. Working on interactive presentations Prezelive.com.
+  avatar: ./avatars/ivan.jpg
   featured: true
   social:
-    - name: github
-      url: https://github.com
     - name: twitter
-      url: https://github.com
-    - name: instagram
-      url: https://github.com
-    - name: dribbble
-      url: https://github.com
-    - name: linkedin
-      url: https://github.com
+      url: https://twitter.com/ichangetheway
+
+- name: Tomas Vestenicky
+  bio: |
+    Designer, developer, problem solver. Maker of FeedBear. I travel and take photos along the way.
+  avatar: ./avatars/tomas.jpg
+  featured: true
+  social:
+    - name: twitter
+      url: https://twitter.com/tmvst
