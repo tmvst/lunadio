@@ -52,9 +52,7 @@ const Footer: React.FC<{}> = () => {
       <Section narrow>
         <HoritzontalRule />
         <FooterContainer>
-          <FooterText>
-            © {copyrightDate} {name}
-          </FooterText>
+          <FooterText>© 2020 {name}</FooterText>
           <div>
             <SocialLinks links={social} />
           </div>

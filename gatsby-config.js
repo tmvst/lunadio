@@ -18,6 +18,14 @@ module.exports = {
       {
         name: `instagram`,
         url: `https://instagram.com/teamlunadio`
+      },
+      {
+        name: `facebook`,
+        url: `https://www.facebook.com/lunadioteam/`
+      },
+      {
+        name: `linkedin`,
+        url: `https://www.linkedin.com/company/lunadio`
       }
     ]
   },
@@ -41,7 +49,8 @@ module.exports = {
         sources: {
           local: false,
           contentful: true
-        }
+        },
+        articlePermalinkFormat: "blog/:slug"
       }
     },
     {
@@ -54,8 +63,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Novela by Narative`,
-        short_name: `Novela`,
+        name: `Lunadio`,
+        short_name: `Lunadio`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#fff`,
