@@ -61,6 +61,12 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-90315668-1"
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Lunadio`,
