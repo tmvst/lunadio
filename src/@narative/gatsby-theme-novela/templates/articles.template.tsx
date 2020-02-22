@@ -16,6 +16,7 @@ const ArticlesPage: Template = ({ location, pageContext }) => {
 
   return (
     <Layout>
+      {/* TODO: Default social share image */}
       <SEO pathname={location.pathname} />
       <ArticlesHero authors={authors} />
       <ProjectsList></ProjectsList>
