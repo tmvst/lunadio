@@ -9,8 +9,13 @@ import mediaqueries from "@styles/media";
 import React from "react";
 
 function SubscribePage() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const email = urlParams.get("email");
+  const windowGlobal = typeof window !== "undefined" && window;
+  let email;
+
+  if (windowGlobal) {
+    const urlParams = new URLSearchParams(windowGlobal.location.search);
+    email = urlParams.get("email");
+  }
 
   return (
     <Layout>
