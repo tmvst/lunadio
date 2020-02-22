@@ -10,7 +10,7 @@ import feedbearLogo from "../../../../assets/images/feedbear.png";
 import prezeLogoWhite from "../../../../assets/images/preze-white.png";
 import prezeLogo from "../../../../assets/images/preze.png";
 
-const ProjectsList = () => {
+const ProjectsList = ({ onSubscription }) => {
   const [colorMode] = useColorMode();
   const isDark = colorMode === `dark`;
 
@@ -40,9 +40,11 @@ const ProjectsList = () => {
         ></ProjectItem>
       </ProjectsWrapper>
 
-      <HeadingContainer>
-        <Title>And writing about building a business</Title>
-      </HeadingContainer>
+      {!onSubscription && (
+        <HeadingContainer>
+          <Title>And writing about building a business</Title>
+        </HeadingContainer>
+      )}
     </Section>
   );
 };
