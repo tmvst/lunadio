@@ -112,7 +112,7 @@ function SubscribePage() {
 
   if (windowGlobal) {
     const urlParams = new URLSearchParams(windowGlobal.location.search);
-    email = urlParams.get("email");
+    email = urlParams.get("email") || "";
   }
 
   const results = useStaticQuery(articlesQuery);
