@@ -15,3 +15,12 @@
   social:
     - name: twitter
       url: https://twitter.com/tmvst
+
+- name: Samuel Briskar
+  bio: |
+    Digital artist and videomaker -determined to continually improve.
+  avatar: ./avatars/semy.jpg
+  featured: true
+  social:
+    - name: twitter
+      url: https://twitter.com/SamuelBriskar
