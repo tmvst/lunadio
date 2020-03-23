@@ -190,7 +190,7 @@ const Title2 = styled(Headings.h2)`
   `}
 `;
 
-const Title = styled(Headings.h2)`
+const Title = styled(Headings.h1)`
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
