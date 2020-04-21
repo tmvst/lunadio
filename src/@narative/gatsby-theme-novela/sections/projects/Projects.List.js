@@ -35,7 +35,7 @@ const ProjectsList = ({ onSubscription }) => {
         <ProjectItem
           name="Preze"
           excerpt="Build interactive presentations for your&nbsp;classroom or&nbsp;conference"
-          link="https://preze.live/"
+          link="https://www.prezelive.com/"
           logoUrl={isDark ? prezeLogoWhite : prezeLogo}
         ></ProjectItem>
       </ProjectsWrapper>
