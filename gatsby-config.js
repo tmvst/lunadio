@@ -48,8 +48,8 @@ module.exports = {
         mailchimp: true,
         authorsPage: false,
         sources: {
-          local: false,
-          contentful: true,
+          local: true,
+          contentful: false,
         },
         articlePermalinkFormat: "blog/:slug",
       },
