@@ -8,26 +8,26 @@ module.exports = {
     description: `A community of indie hackers documenting our journey`,
     hero: {
       heading: `A community of indie hackers documenting our&nbsp;journey`,
-      maxWidth: 652
+      maxWidth: 652,
     },
     social: [
       {
         name: `twitter`,
-        url: `https://twitter.com/lunadio`
+        url: `https://twitter.com/lunadio`,
       },
       {
         name: `instagram`,
-        url: `https://instagram.com/teamlunadio`
+        url: `https://instagram.com/teamlunadio`,
       },
       {
         name: `facebook`,
-        url: `https://www.facebook.com/lunadioteam/`
+        url: `https://www.facebook.com/lunadioteam/`,
       },
       {
         name: `linkedin`,
-        url: `https://www.linkedin.com/company/lunadio`
-      }
-    ]
+        url: `https://www.linkedin.com/company/lunadio`,
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-sitemap`,
@@ -35,8 +35,8 @@ module.exports = {
       resolve: "gatsby-source-contentful",
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
-      }
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
     },
     {
       resolve: "@narative/gatsby-theme-novela",
@@ -48,24 +48,24 @@ module.exports = {
         mailchimp: true,
         authorsPage: false,
         sources: {
-          local: true,
-          contentful: false
+          local: false,
+          contentful: true,
         },
-        articlePermalinkFormat: "blog/:slug"
-      }
+        articlePermalinkFormat: "blog/:slug",
+      },
     },
     {
       resolve: "gatsby-plugin-mailchimp",
       options: {
         endpoint:
-          "https://lunadio.us4.list-manage.com/subscribe/post?u=154d76983d1e4b50ed11f4385&amp;id=6c0ec8d525"
-      }
+          "https://lunadio.us4.list-manage.com/subscribe/post?u=154d76983d1e4b50ed11f4385&amp;id=6c0ec8d525",
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-90315668-1"
-      }
+        trackingId: "UA-90315668-1",
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -76,8 +76,8 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#fff`,
         display: `standalone`,
-        icon: `src/assets/favicon.png`
-      }
-    }
-  ]
+        icon: `src/assets/favicon.png`,
+      },
+    },
+  ],
 };
